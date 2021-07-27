@@ -4,7 +4,8 @@ WORKDIR /home
 
 # TODO: 2-stage build
 
-RUN apk add python3 python3-dev py3-pip musl-dev gcc git py3-gunicorn
+RUN apk add python3 python3-dev py3-pip musl-dev gcc git
+RUN pip3 install gunicorn uvicorn
 
 COPY envs/prod/alpine-packages.txt /tmp/
 RUN cat /tmp/alpine-packages.txt | xargs apk add
