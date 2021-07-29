@@ -1,4 +1,4 @@
-from fastapi.templating import Jinja2Templates
+from starlette.templating import Jinja2Templates
 from pathlib import Path
 
 

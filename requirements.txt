@@ -1,8 +1,5 @@
 wheel
-envparse==0.2.0
-fastapi<=1
-databases[postgresql]
-jinja2
+git+git://github.com/c0ntribut0r/ang@master
 requests<=3
 
 tenacity==6.3.1
