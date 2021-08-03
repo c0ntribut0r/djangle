@@ -1,2 +1,4 @@
 #!/bin/sh
-uvicorn --app-dir=src app:app --reload-dir=src
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+cd $SCRIPT_DIR/../../src
+ang serve

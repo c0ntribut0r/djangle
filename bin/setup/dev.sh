@@ -1,6 +1,6 @@
 #!/bin/sh
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-cd $ROOT/../..
+cd $SCRIPT_DIR/../..
 
 python -m venv venv
 source venv/bin/activate
